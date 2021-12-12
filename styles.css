@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 246, 45);
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: Avenir Next, sans-serif;
+}
+
+.nav_container{
+    width: 100%;
+    margin: 0 auto;
+    font-family: Avenir Next, sans-serif;
+    text-align: left;
+    float: left;
+}
+
+nav{
+    float: left;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width:100%;
+}
+
+nav li{
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: rgb(56, 165, 71);
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(56, 165, 71);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.logo{
+    float: left;
+    padding: 5px;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+header{
+    font-family: Raleway, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 100%;
+}
+
+header::after{
+    content: '';
+    display:table;
+    clear:both;
+}
+
+form {
+    max-width:  30rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgb(255, 252, 87);
+    color: white;
+    background: url('solarPanel.jpeg');
+}
+
+form h1 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-lighter);
+    font-size: var(--font-size-3);
+    text-align: center;
+}
+
+input {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.75rem;
+    float: right;
+}
+
+fieldset{
+    text-align: center;
+}
+
+button{
+    /* float: right; */
+    margin-right: 5px;
+    margin-left: 5px;
+    align-items: center;
+   
+}
+
+.submitButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #dbff66 5%, #fff424 100%);
+	background-color:#dbff66;
+	border-radius:6px;
+	border:1px solid #f8ff24;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.submitButton:hover {
+	background:linear-gradient(to bottom, #fff424 5%, #dbff66 100%);
+	background-color:#fff424;
+}
+.submitButton:active, .dataButton:active {
+	position:relative;
+	top:1px;
+}
+
+.dataButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffff66 5%, #ccff26 100%);
+	background-color:#ffff66;
+	border-radius:6px;
+	border:1px solid #ffff26;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.dataButton:hover {
+	background:linear-gradient(to bottom, #ccff26 5%, #ffff66 100%);
+	background-color:#ccff26;
+} 
