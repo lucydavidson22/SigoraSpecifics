@@ -1,14 +1,36 @@
-window.addEventListener("message", event => {
-    document.querySelector("h1").innerText = JSON.stringify(event);
-    document.body.style.backgroundColor = "black";
-    if (event.data.name === "themeChange") {
-      document.body.style.backgroundColor = "black";
-    }
-  });
+// const backdrop = document.querySelector('.backdrop');
+// const sideDrawer = document.querySelector('.mobile-nav');
+// const menuToggle = document.querySelector('#side-menu-toggle');
 
-// function getDate(){
-//     var today = new Date();
-//     document.getElementById("date").value = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+// function backdropClickHandler() {
+//   backdrop.style.display = 'none';
+//   sideDrawer.classList.remove('open');
 // }
 
-document.getElementById('date').innerHTML = today;
+// function menuToggleClickHandler() {
+//   backdrop.style.display = 'block';
+//   sideDrawer.classList.add('open');
+// }
+
+// backdrop.addEventListener('click', backdropClickHandler);
+// menuToggle.addEventListener('click', menuToggleClickHandler);
+
+// adding js for mobile nav
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

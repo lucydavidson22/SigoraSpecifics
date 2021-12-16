@@ -8,28 +8,50 @@
     <link rel="stylesheet" href="styles.css" >
 </head>
 
-<header>
-    <!-- <button id="side-menu-toggle">Menu</button> -->
+<!-- <header>
+    <button id="side-menu-toggle">Menu</button>
     <div class="nav_container">
       <nav class="main-header_nav">
         <ul>
             <a href="#"><img src="sigoraLogo.png" alt="logo" class="logo"></a>
-            <li><a href="#">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="#">Deals Data</a></li>
             <li><a href="#">Commission Calculator</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </header> -->
+
+  <header class="header">
+    <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="sigoraLogo.png" alt="logo" class="logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Deals Data</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Commission Calculator</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
 
 <body>
 
     <div class="container">
-        <form>
+        <form class="main-form">
             <h1>Advanced Form Styling</h1>
             <p>
-                <label for="required-input">Please enter data for this date:</label>
-                <input type="date" onload="getDate()" class="form-control" id="date" name="date">
+                <!-- <label for="required-input">Please enter data for this date:</label> -->
+                <!-- <input type="date" onload="getDate()" class="form-control" id="date" name="date"> -->
             </p>
             <p>
                 <label for="optional-input">Knocks: </label>
@@ -54,9 +76,8 @@
 
             <fieldset>
                 <legend>Send Your Info</legend>
-                <button class="dataButton">View Data</button>
-                <button class="submitButton">Submit</button>
-
+                <a class="dataButton">View Data</a>
+                <a href="/data.html" class="submitButton">Submit</a>
                 
             </fieldset>
         </form>
