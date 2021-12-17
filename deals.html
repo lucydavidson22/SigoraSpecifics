@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigora Statistics</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="deals.css" >
+</head>
+
+  <header class="header">
+    <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="sigoraLogo.png" alt="logo" class="logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/deals.html" class="nav-link active">Deals Information</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Commission Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a href="/goals.html" class="nav-link">Goals</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div class="container">
+        <form class="main-form">
+            <h1>Advanced Form Styling</h1>
+            <p>
+                <label for="required-input">Please enter data for this date:</label>
+                <input id="today" type="date">
+            </p>
+            <p>
+                <label for="optional-input">Customer Name: </label>
+                <input type="text" id="optional-input" placeholder="Customer Name">
+            </p>
+            <p>
+                <label for="optional-input">kW: </label>
+                <input type="number" id="optional-input" placeholder="Kilowatts">
+            </p>
+            <p>
+                <label for="optional-input">Cost to Customer: </label>
+                <input type="number" id="optional-input" placeholder="Cost">
+            </p>
+            <p>
+                Cash or Finance: <label class="switch">
+                    <input class="switch-input" type="checkbox" />
+                    <span class="switch-label" data-on="Cash" data-off="Finance" ></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+            </p>
+            <p>
+                Energy Efficiency <label class="switch">
+                    <input class="switch-input" type="checkbox" />
+                    <span class="switch-label" data-on="Yes" data-off="No" ></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+            </p>
+            <p>
+                <label for="optional-input">Powerwall: </label>
+                <input type="number" id="optional-input" placeholder="Powerwalls">
+            </p>
+            <p> <!-- Lead Source dropdown of 5 options -->
+                <label for="optional-input">Lead Source: </label>
+                <select class="classic">
+                    <option>Door Knock</option>
+                    <option selected>Referral</option>
+                    <option>Social Media</option>
+                    <option>Inside</option>
+                    <option>Self</option>
+                  </select>
+                
+            </p>
+            <p>
+                <label for="optional-input">Commission: </label>
+                <input type="number" id="optional-input" placeholder="Commission">
+            </p>
+
+            <fieldset>
+                <legend>Send Your Info</legend>
+                <a href="#" class="dataButton">View Report</a>
+                <a href="#" class="submitButton">Submit</a>
+                
+            </fieldset>
+        </form>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

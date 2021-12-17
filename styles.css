@@ -77,7 +77,7 @@ button{
 	background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%); /* green to yellow */
 	background-color:#00b259; /*green*/
 	border-radius:6px;
-	border:1px solid #ffc82c; /*yellow*/
+	/* border:1px solid #ffc82c; */
 	display:inline-block;
 	cursor:pointer;
 	color:#333333;
@@ -86,11 +86,11 @@ button{
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffc82c; /*yellow*/
+	text-shadow:0px 1px 0px #ffc82c;
 }
 .submitButton:hover {
-	background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%); /* yellow to green */
-	background-color:#ffc82c; /*yellow*/
+	background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%);
+	background-color:#ffc82c;
 }
 .submitButton:active, .dataButton:active {
 	position:relative;
@@ -99,10 +99,10 @@ button{
 
 .dataButton {
 	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%); /* yellow to green */
-	background-color:#ffc82c; /*yellow*/
+	background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%);
+	background-color:#ffc82c;
 	border-radius:6px;
-	border:1px solid #ffc82c; /*yellow*/
+	/* border:1px solid #ffc82c; yellow */
 	display:inline-block;
 	cursor:pointer;
 	color:#333333;

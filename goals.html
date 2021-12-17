@@ -22,7 +22,7 @@
                 <a href="#" class="nav-link">Commission Calculator</a>
             </li>
             <li class="nav-item">
-                <a href="/goals.html" class="nav-link">Goals</a>
+                <a href="/goals.html" class="nav-link active">Goals</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -38,52 +38,49 @@
 
         <div class="flex-child">
             <form class="main-form">
-                <h1>Daily Data</h1>
-                <fieldset>
-                    <legend>Knocks/Answer</legend>
-                    <div class="knocksAnswers">will be displayed here</div>
-                </fieldset>
-                <fieldset>
-                    <legend>Knocks/Hour</legend>
-                    <div class="knocksHour">will be displayed here</div>
-                </fieldset>
-                <fieldset>
-                    <legend>Sets/Answer</legend>
-                    <div class="setsAnswers">will be displayed here</div>
-                </fieldset>
-                <fieldset>
-                    <legend>Sets/Hour</legend>
-                    <div class="setsHours">will be displayed here</div>
-                </fieldset>
-                <fieldset>
-                    <legend>Total Time</legend>
-                    <div class="totalHoursTime">will be displayed here</div>
-                </fieldset>
+                <h1>Your Goals</h1>
+                <p>
+                    <label for="required-input">Start Date:</label>
+                    <input id="today" type="date">
+                </p>
+                <p>
+                    <label for="required-input">End Date:</label>
+                    <input id="today" type="date">
+                </p>
+                <p>
+                    <label for="optional-input">Commission Goal: </label>
+                    <input type="text" id="optional-input" placeholder="Commission Goal">
+                </p>                
             </form>
         </div>
         
         <div class="flex-child">
             <form class="main-form">
-                <h1>Overall Information</h1>
+                <h1>What You Need</h1>
                 <fieldset>
-                    <legend>Days Knocking</legend>
-                    <div class="knocksAnswers">will be displayed here</div>
+                    <legend>Deals Needed</legend>
+                    <!-- neededDeals = Goal/(avg commission) -->
+                    <div class="knocksAnswers"> will be displayed here</div>
                 </fieldset>
                 <fieldset>
-                    <legend>Total Knocks</legend>
+                    <legend>Need to Sit With</legend>
+                    <!-- sitsNeeded = neededDeals/closing % -->
                     <div class="knocksHour">will be displayed here</div>
                 </fieldset>
                 <fieldset>
-                    <legend>Total Answers</legend>
+                    <legend>Doors to Knock All Year</legend>
+                    <!-- doorsToKnockYear = (sitsNeeded * sets/sit)*(answers/set * knocks/answer) -->
                     <div class="setsAnswers">will be displayed here</div>
                 </fieldset>
                 <fieldset>
-                    <legend>Total Sets</legend>
+                    <legend>Doors Knocked Each Week Day</legend>
+                    <!-- doorsToKnockDay = doorsToKnockYear/(365 * 5/7) -->
                     <div class="setsHours">will be displayed here</div>
                 </fieldset>
                 <fieldset>
-                    <legend>Total Hours Working</legend>
-                    <div class="totalHoursTime">will be displayed here</div>
+                    <!-- answeredDoorsPerDay = (door-knock goal - doors knocked so far)/(# of remaining days*5/7) in the year) -->
+                    <legend>Answered Doors Needed Each Week Day</legend>
+                    <div class="setsHours">will be displayed here</div>
                 </fieldset>
             </form>
         </div>
