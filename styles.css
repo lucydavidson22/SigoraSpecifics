@@ -169,8 +169,9 @@ a {
     color: #00b259; /* Correct sigora green color */
 }
 
-.nav-link:hover{
+.active, .nav-link:hover{
     color: #ffc82c; /* Correct sigora yellow color */
+    text-shadow: 2px 2px 2px #ffc82c;
 }
 
 .nav-logo {
@@ -222,3 +223,16 @@ a {
     }
 
 }
+
+/* Side by Side divs */
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
