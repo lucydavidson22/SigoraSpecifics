@@ -237,3 +237,7 @@ a {
 .flex-child:first-child {
     margin-right: 20px;
 } 
+
+.flex-child fieldset legend {
+    color: #ffc82c;
+}
