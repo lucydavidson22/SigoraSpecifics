@@ -169,7 +169,11 @@ a {
     color: #00b259; /* Correct sigora green color */
 }
 
-.active, .nav-link:hover{
+.active{
+    color: #ffc82c; /* Correct sigora yellow color */
+}
+
+.nav-link:hover{
     color: #ffc82c; /* Correct sigora yellow color */
     text-shadow: 2px 2px 2px #ffc82c;
 }
