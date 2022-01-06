@@ -40,7 +40,7 @@ header{
     border-radius: 8px;
     box-shadow: 0 4px 30px #ffc82c;
     color: white;
-    background: url('../images/solarPanel.jpeg');
+    background: url('images/solarPanel.jpeg');
 }
 
 .main-form h1 {
