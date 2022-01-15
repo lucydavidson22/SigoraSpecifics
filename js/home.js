@@ -36,11 +36,11 @@ field.value = date.getFullYear().toString() + '-' + (date.getMonth() + 1).toStri
 //     divKnockAnswers.innerHTML = divKnockAnswers.innerHTML + knockAns.value;
 // }
 
-function add_number() {
+function divideNumbers() {
                
-    var first_number = parseInt(document.getElementById("numKnocks").value);
-    var second_number = parseInt(document.getElementById("numAnswers").value);
+    var first_number = parseInt(document.getElementById("numKnocks").innerHTML);
+    var second_number = parseInt(document.getElementById("numAnswers").innerHTML);
     var result = first_number/second_number;
 
-    document.getElementById("txtresult").value = result;
+    document.getElementById("knocksPerAnswers").innerHTML = result;
 }
