@@ -19,7 +19,11 @@ body{
 /* Other Styling */
 
 p{
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+
 }
 
 header{
