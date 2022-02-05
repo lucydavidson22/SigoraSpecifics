@@ -18,6 +18,10 @@ body{
 
 /* Other Styling */
 
+p{
+    margin: 25px;
+}
+
 header{
     font-family: Raleway, sans-serif;
     overflow: hidden;

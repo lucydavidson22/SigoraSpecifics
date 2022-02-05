@@ -13,6 +13,7 @@
 	cursor: pointer;
 	box-sizing:content-box;
     float: right;
+	/* margin: 15px; */
 }
 .switch-input {
 	position: absolute;
